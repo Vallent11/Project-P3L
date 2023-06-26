@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="8dp"
+    android:layout_marginVertical="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Tanggal : " />
+
+        <TextView
+            android:id="@+id/tanggalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/instruktur"
+            app:layout_constraintTop_toTopOf="@id/tanggal"
+            android:layout_marginStart="16dp"
+            tools:text="2020-02-02" />
+
+        <TextView
+            android:id="@+id/sesi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tanggal"
+            app:layout_constraintTop_toBottomOf="@id/tanggal"
+            android:layout_marginTop="4dp"
+            android:text="Sesi : " />
+
+        <TextView
+            android:id="@+id/sesiTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tanggalTV"
+            app:layout_constraintTop_toTopOf="@id/sesi"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/instruktur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/sesi"
+            app:layout_constraintTop_toBottomOf="@id/sesi"
+            android:layout_marginTop="4dp"
+            android:text="Instruktur Penggati: " />
+
+        <TextView
+            android:id="@+id/instrukturTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/tanggalTV"
+            app:layout_constraintTop_toTopOf="@id/instruktur"
+            tools:text="PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
